@@ -1,3 +1,30 @@
+<#
+.SYNOPSIS
+    This script automates the process of enabling the classic Windows 10 right-click context menu by modifying registry keys.
+    
+.DESCRIPTION
+     The "Classic Context Menu" PowerShell script facilitates the modification of registry keys to activate the classic Windows 10 
+     right-click context menu. This menu style is favored by users seeking a more traditional interface experience. The script checks
+     for the existence of the required registry path, creates it if absent, and stops File Explorer to apply changes effectively.
+    
+.PARAMETER 
+   
+    
+.NOTES
+    File Name      : Classic Context Menu.ps1
+    Author         : Calvin Quint
+    License        : GNU GPL
+    Permission     : You are free to change and re-distribute this script as per the terms of the GPL.
+    
+.LINK
+    GitHub Repository: https://github.com/calvin-quint/Time-Zone
+    
+.EMAIL
+    Contact email: github@myqnet.io
+    
+#>
+
+
 # Define the registry path and value name
 $registryPath = "HKCU:\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32"
 
